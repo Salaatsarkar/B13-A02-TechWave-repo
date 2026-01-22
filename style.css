@@ -1,10 +1,8 @@
 body{
     font-family: "Inter", sans-serif;
-    background-color: #1A0B2E;
+    margin: 0px auto;
 }
-/* header{
-    border-bottom: 1px solid rgba(65, 37, 103, 1);
-} */
+/* header section */
 header nav span{
     background: linear-gradient(to right , #F7E93F , rgba(251, 9, 180, 1) , rgba(145, 0, 248, 1));
     -webkit-background-clip: text;
@@ -23,6 +21,55 @@ header nav ul li{
 .hamburger-menu{
     display: none;
 }
+/* banner related style */
+.banner-section{
+    background-image: url(./assets/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+.circle-middle-img{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.microphone-img{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.badge-new{
+    color: #1A0B2E;
+    border-radius: 1000px;
+    background-color: #00FF88;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    position: absolute;
+    top: 12%;
+    transform: translate(90%, 55%);
+
+}
+.banner-text{
+    margin-top: 450px;
+}
+.banner-heading{
+    color: #FFFFFF;
+}
+.banner-description{
+    color: #FFFFFF;
+}
+.btn-2{
+    color: #00FF88;
+    border-radius: 10000px;
+    border: 1px solid #00FF88 ;
+}
 
 
 
@@ -31,6 +78,9 @@ header nav ul li{
 @media screen and (max-width : 576px){
     nav ul li , nav button {
         display: none;
+    }
+    nav{
+        padding: 16px 20px;
     }
     .hamburger-menu{
         display: block;
@@ -45,6 +95,9 @@ header nav ul li{
     nav button {
         display: block;
         margin-right: 20px;
+    }
+    nav{
+        padding: 16px 30px;
     }
     .hamburger-menu ,  nav ul li{
         display: none;
